@@ -1,1 +1,1 @@
-alert("Hey World!");
+(()=>{"use strict";alert("Hello mjami!")})();
