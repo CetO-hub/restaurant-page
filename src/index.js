@@ -1,1 +1,3 @@
-alert("Hey World!");
+import { displayContent } from "./initial.js";
+
+displayContent.about();
