@@ -2,6 +2,22 @@
   --height: 100px;
 }
 
+@font-face {
+  font-family: "headline";
+  src: url("./blackjack-webfont.woff2") format("woff2"),
+    url("./blackjack-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "text";
+  src: url("./cmunui-webfont.woff2") format("woff2"),
+    url("./cmunui-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -44,6 +60,7 @@
   width: 100%;
 }
 .headline-list-item {
+  font-family: "text";
   position: relative;
   font-size: 2.5rem;
   font-weight: bold;
@@ -67,7 +84,7 @@
   top: -20px;
   left: -17.5px;
   right: -17.5px;
-  bottom: -26px;
+  bottom: -24px;
   margin-bottom: -2px;
   z-index: 2;
 }
@@ -124,8 +141,9 @@
 }
 
 .about-container h2 {
+  font-family: "headline";
   font-weight: bold;
-  font-size: 3.5rem;
+  font-size: 4.5rem;
   color: rgb(211 222 229);
 }
 .about-owner {
@@ -137,4 +155,5 @@
 
 .about-text {
   margin-bottom: 50px;
+  font-family: "text";
 }
