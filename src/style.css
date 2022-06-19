@@ -1,0 +1,101 @@
+:root {
+  --height: 100px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.headline-container {
+  margin: 0px 20px;
+  height: var(--height);
+  width: calc(100vw - 40px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.headline-image-container {
+  height: 71px;
+  width: 64px;
+}
+.headline-image-container img {
+  height: 100%;
+  width: 100%;
+}
+
+.headline-list {
+  list-style: none;
+  display: flex;
+
+  justify-content: center;
+  flex: 1;
+  gap: 35px;
+}
+.headline-list-item {
+  position: relative;
+  font-size: 2.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-right: -2px;
+}
+
+.headline-list-item::after {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: -17.5px;
+  right: -17.5px;
+  bottom: -20px;
+}
+
+.headline-list-item::before {
+  border: 2px solid black;
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: -17.5px;
+  right: -17.5px;
+  bottom: -26px;
+  margin-bottom: -1px;
+  z-index: 2;
+}
+
+.headline-list-item:hover {
+  opacity: 0.5;
+}
+
+.headline-list-item.active::before {
+  border-bottom: 2px solid white;
+  z-index: 2;
+}
+
+.body-container {
+  position: relative;
+
+  background-image: url("./background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100vw;
+  height: calc(100vh - var(--height) - 10px);
+}
+
+.body-container::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: black;
+  z-index: 1;
+}
