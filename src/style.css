@@ -79,6 +79,11 @@
   z-index: 2;
 }
 
+.headline-list-item.active:hover {
+  opacity: 1;
+  color: rgb(125, 125, 125);
+}
+
 .body-container {
   position: relative;
 
