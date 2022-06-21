@@ -93,14 +93,14 @@
   opacity: 0.5;
 }
 
+.headline-list-item.active {
+  opacity: 1;
+  color: rgb(65 191 115);
+}
+
 .headline-list-item.active::before {
   border-bottom: 2px solid white;
   z-index: 2;
-}
-
-.headline-list-item.active:hover {
-  opacity: 1;
-  color: rgb(125, 125, 125);
 }
 
 .body-container {
